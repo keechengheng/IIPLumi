@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:checked="false"
+            android:icon="@drawable/drawer_homeicon"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/settings"
+            android:checked="false"
+            android:icon="@drawable/drawer_settingsicon"
+            android:title="@string/menu_settings" />
+
+        <item
+            android:id="@+id/options"
+            android:checked="false"
+            android:icon="@drawable/drawer_optionicon"
+            android:title="@string/menu_options" />
+
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/drawer_logouticon"
+            android:title="@string/menu_logout" />
+
+    </group>
+</menu>

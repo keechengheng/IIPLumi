@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg2"
+    tools:context="com.example.jiahui.iiplumi.SignUpActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1A000000" />
+
+        <!-- Lumi Logo -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@android:color/white"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="35dp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_lumilogo" />
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/signupName"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/login_textboxstyle"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="53dp"
+            android:paddingRight="8dp"
+            android:hint="Full Name"
+            android:textColorHint="@color/colorFadeHint"
+            android:textColor="@color/colorSecondaryText"
+            android:singleLine="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/signup_nameicon"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="45dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/signupEmail"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="267dp"
+            android:background="@drawable/login_textboxstyle"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="53dp"
+            android:paddingRight="8dp"
+            android:hint="Email"
+            android:textColorHint="@color/colorFadeHint"
+            android:textColor="@color/colorSecondaryText"
+            android:singleLine="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_emailicon"
+            android:layout_marginTop="277dp"
+            android:layout_marginLeft="45dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/signupPassword"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="314dp"
+            android:background="@drawable/login_textboxstyle"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="53dp"
+            android:paddingRight="8dp"
+            android:hint="Password"
+            android:textColorHint="@color/colorFadeHint"
+            android:textColor="@color/colorSecondaryText"
+            android:singleLine="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_passicon"
+            android:layout_marginTop="324dp"
+            android:layout_marginLeft="45dp" />
+
+        <!-- Confirm Email -->
+        <EditText
+            android:id="@+id/signupConfirmPass"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="361dp"
+            android:background="@drawable/login_textboxstyle"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="53dp"
+            android:paddingRight="8dp"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/colorFadeHint"
+            android:textColor="@color/colorSecondaryText"
+            android:singleLine="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/signup_confirmpass"
+            android:layout_marginTop="371dp"
+            android:layout_marginLeft="45dp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="440dp"
+            android:background="@drawable/login_buttonstyle"
+            android:onClick="onRegisterButtonClick"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

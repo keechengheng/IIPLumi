@@ -1,0 +1,352 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorGreyishWhiteBg"
+    tools:context="com.example.jiahui.iiplumi.JobDetailsActivity">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Job Photo Header -->
+            <ImageView
+                android:id="@+id/header_imgview"
+                android:layout_width="match_parent"
+                android:layout_height="240dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="#99000000" />
+            <!-- Job Type Header -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width=" 130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/canoe"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="30dp" />
+
+            <!-- Job Type Banner Header -->
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="160dp"
+                android:background="@drawable/jobdetails_jobtypebanner"
+                android:text="Dragon Boat Orientation"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" /> -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="165dp"
+                android:text="Kayaking Orientation"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+            <!-- Comment Function -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/commentButton"
+                android:onClick="onCommentButtonClick"
+                android:background="@drawable/jobdetails_commentbuttonstyle"
+                android:drawableLeft="@drawable/jobdetails_commenticon"
+                android:drawablePadding="10dp"
+                android:text="Comment"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:textAllCaps="true"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="230dp"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <!-- Job Rows Start -->
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="JOB INFORMATION"
+                android:textColor="@color/colorRowTitle"
+                android:textSize="16sp"
+                android:layout_marginTop="262dp"
+                android:layout_marginLeft="15dp" /> -->
+            <!-- Job Row Opacity -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_marginTop="285dp"
+                android:background="@color/colorGreyBg" />
+            <!-- Date -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="285dp"
+                android:background="@color/colorGreyLineDivider" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jobdetails_dateicon"
+                android:layout_marginTop="296dp"
+                android:layout_marginLeft="@dimen/page_margin_left" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Date"
+                android:textColor="@color/colorItem"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="298dp"
+                android:layout_marginLeft="@dimen/item_margin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="[Date]"
+                android:textColor="@color/colorInput"
+                android:textSize="14sp"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="298dp"
+                android:layout_marginRight="@dimen/page_margin_right" />
+
+            <!-- Time -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="330dp"
+                android:layout_marginLeft="@dimen/page_margin_left"
+                android:background="@color/colorGreyLineDivider" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jobdetails_timeicon"
+                android:layout_marginTop="341dp"
+                android:layout_marginLeft="@dimen/page_margin_left" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textColor="@color/colorItem"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="343dp"
+                android:layout_marginLeft="@dimen/item_margin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="[Time]"
+                android:textColor="@color/colorInput"
+                android:textSize="14sp"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="343dp"
+                android:layout_marginRight="@dimen/page_margin_right" />
+
+            <!-- Venue -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="375dp"
+                android:layout_marginLeft="@dimen/page_margin_left"
+                android:background="@color/colorGreyLineDivider" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jobdetails_venueicon"
+                android:layout_marginTop="386dp"
+                android:layout_marginLeft="@dimen/page_margin_left" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venue"
+                android:textColor="@color/colorItem"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="388dp"
+                android:layout_marginLeft="@dimen/item_margin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="[Venue]"
+                android:textColor="@color/colorInput"
+                android:textSize="14sp"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="388dp"
+                android:layout_marginRight="@dimen/page_margin_right" />
+
+            <!-- Client -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="420dp"
+                android:layout_marginLeft="@dimen/page_margin_left"
+                android:background="@color/colorGreyLineDivider" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jobdetails_clienticon"
+                android:layout_marginTop="431dp"
+                android:layout_marginLeft="@dimen/page_margin_left" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client"
+                android:textColor="@color/colorItem"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="433dp"
+                android:layout_marginLeft="@dimen/item_margin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="[Client]"
+                android:textColor="@color/colorInput"
+                android:textSize="14sp"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="433dp"
+                android:layout_marginRight="@dimen/page_margin_right" />
+
+            <!-- Remarks -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="465dp"
+                android:layout_marginLeft="@dimen/page_margin_left"
+                android:background="@color/colorGreyLineDivider" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jobdetails_remarkicon"
+                android:layout_marginTop="476dp"
+                android:layout_marginLeft="@dimen/page_margin_left" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remarks"
+                android:textColor="@color/colorItem"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="478dp"
+                android:layout_marginLeft="@dimen/item_margin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="[Remarks]"
+                android:textColor="@color/colorInput"
+                android:textSize="14sp"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="478dp"
+                android:layout_marginRight="@dimen/page_margin_right" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="510dp"
+                android:background="@color/colorGreyLineDivider" />
+
+
+
+            <!-- Sign Up Coaches Row Start -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Coaches who accepted this job...."
+                android:textColor="@color/colorRowTitle"
+                android:textSize="16sp"
+                android:layout_marginTop="543dp"
+                android:layout_marginLeft="@dimen/page_margin_left" />
+            <!-- No. of Coach Required -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="@color/colorRowTitle"
+                android:textSize="24sp"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="535dp"
+                android:layout_marginLeft="305dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="@color/colorRowTitle"
+                android:textSize="24sp"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="535dp"
+                android:layout_marginLeft="318dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18"
+                android:textColor="@color/colorGreen"
+                android:textSize="30sp"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="529dp"
+                android:layout_marginRight="58dp" />
+            <!-- Coach Row opacity -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginTop="566dp"
+                android:background="@color/colorGreyBg" />
+            <!-- Coach Row Content -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="566dp"
+                android:background="@color/colorGreyLineDivider" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="691dp"
+                android:background="@color/colorGreyLineDivider" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="692dp"
+                android:background="@color/colorGreyishWhiteBg" />
+
+            <!-- Accept Job Button -->
+            <Button
+                android:id="@+id/acceptjobButton"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="370dp"
+                android:layout_marginLeft="@dimen/page_margin_left"
+                android:layout_marginRight="@dimen/page_margin_right"
+                android:layout_marginBottom="@dimen/page_margin_bottom"
+                android:background="@drawable/jobdetails_acceptjobbuttonstyle"
+                android:onClick="onAcceptJobButtonClick"
+                android:text="Accept Job Offer"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"/>
+
+        </FrameLayout>
+
+        <include
+            android:id="@+id/toolbar_transparent"
+            layout="@layout/tool_bar_transparent" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,236 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorGreyBg"
+    tools:context="com.example.jiahui.iiplumi.JobCreateActivity">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Type of Event -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Type of Event"
+            android:textColor="@color/colorRowTitle"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/pageitemicon_margin_left" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/bg_itembgstyle"
+            android:layout_marginLeft="@dimen/pageitembg_margin_left"
+            android:layout_marginRight="@dimen/pageitembg_margin_right" />
+
+        <!-- Coaches Required -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Coaches Required"
+            android:textColor="@color/colorRowTitle"
+            android:textSize="16sp"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="@dimen/page_margin_left" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="163dp"
+            android:background="@drawable/bg_itembgstyle"
+            android:layout_marginLeft="@dimen/pageitembg_margin_left"
+            android:layout_marginRight="@dimen/pageitembg_margin_right" />
+        <!-- Coach Number Select -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coachicon"
+            android:layout_marginTop="185dp"
+            android:layout_marginLeft="@dimen/page_margin_left" />
+
+        <!-- Event Details -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Event Details"
+            android:textColor="@color/colorRowTitle"
+            android:textSize="16sp"
+            android:layout_marginTop="259dp"
+            android:layout_marginLeft="@dimen/pageitemicon_margin_left" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="272dp"
+            android:layout_marginTop="282dp"
+            android:background="@drawable/bg_itembgstyle"
+            android:layout_marginLeft="@dimen/pageitembg_margin_left"
+            android:layout_marginRight="@dimen/pageitembg_margin_right" />
+        <!-- Event Rows Start -->
+        <!-- Date -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jobdetails_dateicon"
+            android:layout_marginTop="293dp"
+            android:layout_marginLeft="@dimen/pageitemicon_margin_left" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Date"
+            android:textColorHint="@color/colorFadeHint"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="16sp"
+            android:inputType="date"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="284dp"
+            android:layout_marginLeft="@dimen/pageinput_margin_left"
+            android:layout_marginRight="@dimen/pageinput_margin_right"
+            android:paddingTop="5dp"
+            android:paddingBottom="1dp" />
+        <!-- Time -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jobdetails_timeicon"
+            android:layout_marginTop="338dp"
+            android:layout_marginLeft="@dimen/pageitemicon_margin_left" />
+        <!-- From -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:textColor="@color/colorItem"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="70dp" />
+        <EditText
+            android:layout_width="218dp"
+            android:layout_height="45dp"
+            android:hint="Start Time"
+            android:textColorHint="@color/colorFadeHint"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="16sp"
+            android:inputType="time"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="328dp"
+            android:layout_marginRight="@dimen/pageinput_margin_right"
+            android:paddingTop="5dp"
+            android:paddingBottom="1dp" />
+        <!-- To -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:textColor="@color/colorItem"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="385dp"
+            android:layout_marginLeft="70dp" />
+        <EditText
+            android:layout_width="218dp"
+            android:layout_height="45dp"
+            android:hint="End Time"
+            android:textColorHint="@color/colorFadeHint"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="16sp"
+            android:inputType="time"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="373dp"
+            android:layout_marginRight="@dimen/pageinput_margin_right"
+            android:paddingTop="5dp"
+            android:paddingBottom="1dp" />
+
+        <!-- Venue -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jobdetails_venueicon"
+            android:layout_marginTop="429dp"
+            android:layout_marginLeft="@dimen/pageitemicon_margin_left" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Venue"
+            android:textColorHint="@color/colorFadeHint"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="16sp"
+            android:inputType="textNoSuggestions"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="419dp"
+            android:layout_marginLeft="@dimen/pageinput_margin_left"
+            android:layout_marginRight="@dimen/pageinput_margin_right"
+            android:paddingTop="5dp"
+            android:paddingBottom="1dp"
+            android:singleLine="true" />
+
+        <!-- Client -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jobdetails_clienticon"
+            android:layout_marginTop="474dp"
+            android:layout_marginLeft="@dimen/pageitemicon_margin_left" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Client"
+            android:textColorHint="@color/colorFadeHint"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="16sp"
+            android:inputType="textNoSuggestions"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="464dp"
+            android:layout_marginLeft="@dimen/pageinput_margin_left"
+            android:layout_marginRight="@dimen/pageinput_margin_right"
+            android:paddingTop="5dp"
+            android:paddingBottom="1dp"
+            android:singleLine="true" />
+
+        <!-- Remark -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jobdetails_remarkicon"
+            android:layout_marginTop="519dp"
+            android:layout_marginLeft="@dimen/pageitemicon_margin_left" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Remarks"
+            android:textColorHint="@color/colorFadeHint"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="16sp"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="509dp"
+            android:layout_marginLeft="@dimen/pageinput_margin_left"
+            android:layout_marginRight="@dimen/pageinput_margin_right"
+            android:paddingTop="5dp"
+            android:paddingBottom="1dp" />
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="554dp"
+            android:background="@color/colorGreyBg" />
+
+    </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

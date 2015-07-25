@@ -1,0 +1,64 @@
+<resources>
+    <!-- Android Manifest -->
+    <string name="app_name">IIPLumi</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_settings">Account Settings</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="title_activity_job">Jobs</string>
+    <string name="title_activity_job_details">Job Details</string>
+    <string name="title_activity_job_create">Create New Job</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+
+    <!-- Action Bar -->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_edit">Edit Profile</string>
+    <string name="action_tick">Confirm Changes</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_tier">Tier Selection</string>
+
+    <!-- Navigation Drawer -->
+    <string name="menu_home">Home</string>
+    <string name="menu_settings">Account Settings</string>
+    <string name="menu_options">Options</string>
+    <string name="menu_logout">Logout</string>
+
+    <string name="drawerOpen">Open</string>
+    <string name="drawerClose">Close</string>
+
+    <!-- Login Page - Sign Up Underline -->
+    <string name="under_SignUp">No Account? Sign Up</string>
+
+    <!-- Profile Edit Page Gender Dropdownlist -->
+    <string name="gender_prompt">Choose a gender</string>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <!-- Profile Edit Page Bank Account Dropdownlist -->
+    <string name="bankacc_prompt">Bank Acc Type</string>
+
+    <string-array name="bankacc_array">
+        <item>POSB Savings</item>
+        <item>POSB Current</item>
+    </string-array>
+    <string name="title_activity_cert_view">CertViewActivity</string>
+
+    <!-- Popup alert -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="title_activity_options">OptionsActivity</string>
+
+
+
+
+
+</resources>

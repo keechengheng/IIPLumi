@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgbgbg"
+    tools:context="com.example.jiahui.iiplumi.LoginActivity">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#40000000" />
+
+        <!-- Lumi Logo -->
+        <!-- <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@android:color/white"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="35dp" /> -->
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/newlumi" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="245dp"
+            android:background="@drawable/login_textboxstyle"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="65dp"
+            android:paddingRight="8dp"
+            android:hint="Email"
+            android:textColorHint="@color/colorFadeHint"
+            android:textColor="@color/colorSecondaryText"
+            android:singleLine="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_emailicon"
+            android:layout_marginTop="255dp"
+            android:layout_marginLeft="55dp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="93dp"
+            android:background="@color/colorFadeHint" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="292dp"
+            android:background="@drawable/login_textboxstyle"
+            android:inputType="textPassword"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="65dp"
+            android:paddingRight="8dp"
+            android:hint="Password"
+            android:textColorHint="@color/colorFadeHint"
+            android:textColor="@color/colorSecondaryText"
+            android:singleLine="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_passicon"
+            android:layout_marginTop="303dp"
+            android:layout_marginLeft="55dp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="297dp"
+            android:layout_marginLeft="93dp"
+            android:background="@color/colorFadeHint" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="355dp"
+            android:background="@drawable/login_buttonstyle"
+            android:onClick="onLoginButtonClick"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"/>
+
+        <!-- Facebook Login -->
+        <Button
+            android:id="@+id/fbloginButton"
+            android:layout_width="280dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="405dp"
+            android:background="@drawable/login_fbbuttonstyle"
+            android:drawableLeft="@drawable/login_fbicon"
+            android:text="Sign in with Facebook"
+            android:layout_height="45dp"
+            android:textSize="17dp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:onClick="onFBLoginButtonClick" />
+
+        <!-- Sign Up Button -->
+        <TextView
+            android:id="@+id/SignUpbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="30dp"
+            android:onClick="onSignUpButtonClick"
+            android:text="No Account? Sign Up"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <!-- Error Message -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="220dp"
+            android:text="Wrong Password"
+            android:textColor="@color/colorRed"
+            android:textSize="16sp"
+            android:textStyle="italic"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jiahui.iiplumi.PaymentActivity">
+
+    <item
+        android:id="@+id/action_refresh"
+        android:title="@string/action_refresh"
+        android:orderInCategory="200"
+        android:icon="@drawable/action_refreshicon"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_filter"
+        android:title="@string/action_filter"
+        android:orderInCategory="100"
+        android:icon="@drawable/action_filtericon"
+        app:showAsAction="always"/>
+
+</menu>

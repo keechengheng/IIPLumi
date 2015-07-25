@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Palette -->
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimaryLight">#FFECB3</color>
+    <color name="colorAccent">#536DFE</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorDivider">#B6B6B6</color>
+
+    <color name="colorAmber">#FFC107</color>
+    <color name="colorDarkAmber">#FFA000</color>
+    <color name="colorDarkOrange">#F57C00</color>
+
+    <!-- Icon Color & Hint Color -->
+    <color name="colorFadeHint">#BEBEBE</color>
+
+    <!-- Menu Home Page -->
+    <color name="colorMenuTitle">#B3FFFFFF</color>
+
+    <!-- Profile Page -->
+    <color name="colorGreyishWhiteBg">#FAFAFA</color>
+    <color name="colorGreyLineDivider">#D7D7D7</color>
+    <color name="colorItem">#3F3F3F</color>
+    <color name="colorInput">#B2B2B2</color>
+
+    <!-- Profile Edit Page -->
+    <color name="colorGreyBg">#0D000000</color>
+    <color name="colorRowTitle">#363636</color>
+
+    <!-- Cert View Page -->
+    <color name="colorDarkGrey">#727272</color>
+    <color name="colorBlackOpacity">#99000000</color>
+
+    <!-- Job Page -->
+    <color name="colorFABRed">#E53935</color>
+
+    <!-- Job Details Page -->
+    <color name="colorPink">#FF4081</color>
+    <color name="colorGreen">#6ACA25</color>
+    <color name="colorLightGreen">#99CC00</color>
+
+    <!-- Payment Page -->
+    <color name="colorRed">#EF5350</color>
+
+
+
+</resources>
